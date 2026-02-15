@@ -12,32 +12,32 @@ To detect faces from an image, extract meaningful color features, cluster them u
 
 The project follows these major steps:
 
-### 1️⃣ Image Acquisition
+### 1️. Image Acquisition
 - The input image is loaded using OpenCV.
 - The image is converted from BGR to grayscale for face detection.
 
-### 2️⃣ Face Detection
+### 2️. Face Detection
 - Haar Cascade Classifier is used to detect faces.
 - Bounding boxes are drawn around detected faces.
 
-### 3️⃣ Feature Extraction
+### 3️. Feature Extraction
 - The original image is converted to HSV color space.
 - For each detected face:
   - Mean Hue value is calculated
   - Mean Saturation value is calculated
 - These values form a 2D feature vector (Hue, Saturation).
 
-### 4️⃣ Clustering Using K-Means
+### 4️. Clustering Using K-Means
 - K-Means clustering is applied to group faces based on similarity.
 - Faces with similar color characteristics are grouped into the same cluster.
 - Scatter plots are generated for visualization.
 
-### 5️⃣ Template Image Classification
+### 5️. Template Image Classification
 - A separate template image is loaded.
 - Face detection and feature extraction are performed.
 - The trained K-Means model predicts the cluster of the template image.
 
-### 6️⃣ Visualization and Analysis
+### 6️. Visualization and Analysis
 - Scatter plots show cluster distribution.
 - Template image cluster prediction is visualized.
 - Theoretical analysis of distance-based learning concepts is included in the report.
